@@ -95,15 +95,60 @@ nav{
 .primary-nav > li {
 	float:left;
 }
-.primary-nav > li > a, .nav-logo{
+.primary-nav > li > a{
 	float: left;
 	padding: 25px 0;
 	width: 150px;
+	text-align: center;
 }
 .nav-logo {
 	float: left;
+	padding: 25px 0;
+	padding-left: 25px;
+	width: 150px;
 }
-
+nav li a:focus,
+nav li a:hover,
+nav li a:active {
+	color: white;
+	background-color: #CC3F0C;
+}
+.mobile-menu-icon{
+	/*background-color: red;*/
+	background-image: url('https://maxcdn.icons8.com/Share/icon/p1em/User_Interface//menu1600.png');
+	height: 50px;
+	width: 50px;
+	float: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: none;
+}
+/*===============
+| Mobile Nav
+===============*/
+@media screen and (max-width: 1023px){
+	nav{
+		position: static;
+	}
+	.primary-nav{
+		width:100%;
+	}
+	.primary-nav > li{
+		width: 100%;
+	}
+	.primary-nav li a{
+		text-align: center;
+		padding: 15px 0px 15px 0;
+		width: 100%;
+		font-size: 16px;
+		border-left: none;
+		border-bottom: 1px solid black;
+	}
+	.mobile-menu-icon {
+		display: block;
+	}
+}
 
 
 
