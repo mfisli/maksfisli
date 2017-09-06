@@ -119,8 +119,9 @@ nav{
 }
 nav .nav-logo {
 	float: left;
-/*	padding: 12px 0 12px 12px;
-	width: 150px;*/
+	padding: 25px 0;
+	padding-left: 25px;
+	width: 150px;
 	/*margin: 10px 0 8px 30px;*/
 }
 nav li a:focus,
