@@ -244,6 +244,13 @@ nav li a:active {
 .flex-column .button {
 	margin-top: auto;
 }
+/*===============
+| Contact Me
+===============*/
+.email-me{
+	text-decoration: underline;
+	font-style: italic;
+}
 
 /*===============
 | Mobile Nav
