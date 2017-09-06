@@ -188,6 +188,7 @@ nav li a:active {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-origin: center;
+	background-attachment: fixed;
 	position: relative;
 	z-index: 1;
 
