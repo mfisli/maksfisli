@@ -152,7 +152,7 @@ nav li a:active {
 	display: block;
 	padding: 12px 0;
 	width: 150px;
-	z-index: 10;
+	z-index: 0;
 	cursor: pointer;
 	margin-top: 20px;
 }
@@ -205,14 +205,19 @@ nav li a:active {
 }
 .flex-banner{
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	z-index: 5;
 	text-align: center;
 
 }
 .flex-banner-item{
-	flex-basis: 40%;
+	-ms-flex-preferred-size: 40%;
+	    flex-basis: 40%;
 	z-index: 5;
 	text-align: center;
 }
@@ -228,18 +233,31 @@ nav li a:active {
 	/*background-color: gray;*/
 }
 .flex-column-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .flex-column figure{
 	max-width: 100%;
-	flex-basis: 250px;
+	-ms-flex-preferred-size: 250px;
+	    flex-basis: 250px;
 }
 .flex-column {
-	flex-basis: 30%;
+	-ms-flex-preferred-size: 30%;
+	    flex-basis: 30%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	margin-bottom: 10px;
 }
 .flex-column .button {
@@ -298,26 +316,18 @@ footer small{
 }
 @media screen and (max-width: 1023px){
 	.flex-column-container{
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.flex-column figure{
 		max-width: 100%;
-		flex-basis: 250px;
+		-ms-flex-preferred-size: 250px;
+		    flex-basis: 250px;
 		margin: 0 auto;
 	}
 	.flex-column .button{
 		margin: 0 auto 10px auto;
 	}
 }
-/*414px*/
-
-
-
-
-
-
-
-
-
-
-
