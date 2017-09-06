@@ -18,7 +18,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	margin-left: 0;
+	margin-right: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -73,11 +74,15 @@ b{
 | Globals
 ===============*/
 h1 {
+	margin: 10px 0;
 	font-size: 1.75em;
+	display: block;
 }
 h2 {
+	margin: 10px 0;
 	font-size: 1.5em;
 }
+
 .wrapper {
 	/*must provide a width for margin to work*/
 	margin: 20px auto;
@@ -134,24 +139,39 @@ nav li a:active {
 	display: none;
 }
 .button {
-	border: 1px solid white;
-	color: white;
-	background-color: none;
+	color: black;
+/*	background-color: white;
+*/	border: 1px solid black;
 	border-radius: 10px;
 	text-decoration: none;
 	text-align: center;
 	display: block;
 	padding: 12px 0;
-	margin: 8px auto 8px;
 	width: 150px;
 	z-index: 10;
 	cursor: pointer;
+	margin-top: 20px;
 }
 .button:hover{
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+}
+.button-ghost{
+	color: white;
+	/*background-color: none;*/
+	border: 1px solid white;
+}
+.button-ghost:hover{
+	border: 1px solid white;
 	color: black;
 	background-color: white;
-	border: 1px solid black;
 }
+
+.button-center{
+	margin: 8px auto 8px;
+}
+
 /*===============
 | Intro Screen
 ===============*/
@@ -196,6 +216,30 @@ nav li a:active {
 	color: white;
 	text-align: center;
 }
+/*===============
+| Portfolio
+===============*/
+.portfolio{
+	/*background-color: gray;*/
+}
+.flex-column-container{
+	display: flex;
+	justify-content: space-between;
+}
+.flex-column figure{
+	max-width: 100%;
+	flex-basis: 250px;
+}
+.flex-column {
+	flex-basis: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+}
+.flex-column .button {
+	margin-top: auto;
+}
 
 /*===============
 | Mobile Nav
@@ -227,6 +271,20 @@ nav li a:active {
 		display: block;
 	}
 }
+@media screen and (max-width: 1023px){
+	.flex-column-container{
+		flex-direction: column;
+	}
+	.flex-column figure{
+		max-width: 100%;
+		flex-basis: 250px;
+		margin: 0 auto;
+	}
+	.flex-column .button{
+		margin: 0 auto 10px auto;
+	}
+}
+/*414px*/
 
 
 
