@@ -251,6 +251,17 @@ nav li a:active {
 	text-decoration: underline;
 	font-style: italic;
 }
+.icon {
+	margin-right: 10px;
+	font-size: 30px;
+}
+footer {
+	text-align: right;
+}
+footer small{
+	font-size: 10px;
+	padding-right: 10px;
+}
 
 /*===============
 | Mobile Nav
